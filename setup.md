@@ -10,7 +10,7 @@ When designing a backend architecture, we should focus on creating robust APIs t
 1. **Error Handling**: Clear and consistent error responses.  
 2. **Validation**: Strict input validation to prevent bad data.  
 3. **Scalability**: Handles increased requests smoothly.  
-4. **Security**: Protects against vulnerabilities like SQL injection or XSS.  
+4. **Security**: Protects against vulnerabilities like SQL injection.
 5. **Documentation**: Comprehensive and easy-to-understand documentation for developers.  
 6. **Backward Compatibility**: Supports older versions to avoid breaking changes for users.  
 
@@ -132,7 +132,7 @@ export type TLogoutControllerInput = z.TypeOf<typeof LogoutControllerSchema>;
 
 ---
 
-### 5. Database Best Practices  
+### 4. Database Best Practices  
 
 - Use an ORM/ODM (e.g., Mongoose for MongoDB).  
 - Define clear relationships and use indexes for performance.  
@@ -141,7 +141,7 @@ export type TLogoutControllerInput = z.TypeOf<typeof LogoutControllerSchema>;
 
 ---
 
-### 7. API Documentation  
+### 5. API Documentation  
 
 Use tools like **Swagger** or **Postman** for API documentation. Postman is widely used  
 
@@ -150,7 +150,13 @@ Use tools like **Swagger** or **Postman** for API documentation. Postman is wide
 
 ---
 
-### 8. Deployment  
+### 6. Testing and CI/CD
+Write tests:
+Unit tests for individual functions (Jest, Mocha).
+Integration tests for APIs (Supertest).
+Automate tests in a CI/CD pipeline using tools like GitHub Actions or CircleCI.
+
+### 7. Deployment  
 
 - Use **Docker** for containerization.  
 - Deploy using tools like:  
@@ -160,7 +166,7 @@ Use tools like **Swagger** or **Postman** for API documentation. Postman is wide
 
 ---
 
-### 9. Documentation  
+### 8. Documentation  
 
 Documentation is a key feature for any project. Ensure all APIs and features are documented in a `README.md` file. Sub-categorize content and create separate folders for different entities when necessary.  
 
